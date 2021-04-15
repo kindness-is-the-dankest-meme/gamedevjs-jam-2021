@@ -5,6 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {},
+  "dependencies": {
+    "evt": "1.9.12"
+  },
   "eslintConfig": {
     "extends": "@kitdm"
   }
