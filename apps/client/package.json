@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {},
   "dependencies": {
+    "@kitdm/shared": "1.0.0",
     "evt": "1.9.12"
   },
   "eslintConfig": {
