@@ -2,9 +2,19 @@
   "name": "@kitdm/gamedevjs-jam-2021",
   "version": "1.0.0",
   "description": "Maybe an entry for the Gamedev.js Jam 2021",
-  "main": "index.js",
   "repository": "git@github.com:kindness-is-the-dankest-meme/gamedevjs-jam-2021.git",
   "author": "Matt Hayes <matt@mysterycommand.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "engines": {
+    "node": "14",
+    "yarn": "1"
+  },
+  "workspaces": [
+    "apps/*",
+    "pkgs/*"
+  ],
+  "devDependencies": {
+    "typescript": "4.2.4"
+  }
 }
