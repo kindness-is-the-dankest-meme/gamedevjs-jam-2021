@@ -1,0 +1,6 @@
+{
+  "name": "@kitdm/shared",
+  "version": "1.0.0",
+  "description": "Maybe a Gamedev.js Jam 2021 Shared Package",
+  "private": true
+}

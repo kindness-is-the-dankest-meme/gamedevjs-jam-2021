@@ -1,0 +1,6 @@
+{
+  "name": "@kitdm/server",
+  "version": "1.0.0",
+  "description": "Maybe a Gamedev.js Jam 2021 Server",
+  "private": true
+}
