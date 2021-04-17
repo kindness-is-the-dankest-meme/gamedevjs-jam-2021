@@ -2,5 +2,14 @@
   "name": "@kitdm/client",
   "version": "1.0.0",
   "description": "Maybe a Gamedev.js Jam 2021 Client",
-  "private": true
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@kitdm/shared": "1.0.0",
+    "evt": "1.9.12"
+  },
+  "eslintConfig": {
+    "extends": "@kitdm"
+  }
 }
