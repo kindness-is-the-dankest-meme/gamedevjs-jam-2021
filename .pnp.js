@@ -338,7 +338,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:bf0b00470a5c727f323380b74674a18062d8b2bf5f5b89e35116900600867064044c77de56c9a23ace1a6f62db9af8035a648bbdf207ff8d2a46c846509ed6c3#npm:4.22.0"],
             ["eslint", "npm:7.24.0"],
             ["eslint-config-prettier", "virtual:bf0b00470a5c727f323380b74674a18062d8b2bf5f5b89e35116900600867064044c77de56c9a23ace1a6f62db9af8035a648bbdf207ff8d2a46c846509ed6c3#npm:8.2.0"],
-            ["eslint-plugin-prettier", "virtual:bf0b00470a5c727f323380b74674a18062d8b2bf5f5b89e35116900600867064044c77de56c9a23ace1a6f62db9af8035a648bbdf207ff8d2a46c846509ed6c3#npm:3.4.0"]
+            ["eslint-plugin-prettier", "virtual:bf0b00470a5c727f323380b74674a18062d8b2bf5f5b89e35116900600867064044c77de56c9a23ace1a6f62db9af8035a648bbdf207ff8d2a46c846509ed6c3#npm:3.4.0"],
+            ["prettier", "npm:2.2.1"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -353,7 +354,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:6896a91b67749dbbf418a543156c4eac6f4cbc1fa027e86ac49b3756914fdc2827d616a36a5b832cec0535d82dd54a0d1a5d3cf6f127d29144f1819c3396108b#npm:4.22.0"],
             ["@typescript-eslint/parser", "virtual:6896a91b67749dbbf418a543156c4eac6f4cbc1fa027e86ac49b3756914fdc2827d616a36a5b832cec0535d82dd54a0d1a5d3cf6f127d29144f1819c3396108b#npm:4.22.0"],
             ["eslint-config-prettier", "virtual:6896a91b67749dbbf418a543156c4eac6f4cbc1fa027e86ac49b3756914fdc2827d616a36a5b832cec0535d82dd54a0d1a5d3cf6f127d29144f1819c3396108b#npm:8.2.0"],
-            ["eslint-plugin-prettier", "virtual:6896a91b67749dbbf418a543156c4eac6f4cbc1fa027e86ac49b3756914fdc2827d616a36a5b832cec0535d82dd54a0d1a5d3cf6f127d29144f1819c3396108b#npm:3.4.0"]
+            ["eslint-plugin-prettier", "virtual:6896a91b67749dbbf418a543156c4eac6f4cbc1fa027e86ac49b3756914fdc2827d616a36a5b832cec0535d82dd54a0d1a5d3cf6f127d29144f1819c3396108b#npm:3.4.0"],
+            ["prettier", "npm:2.2.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -1710,7 +1712,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", null],
             ["eslint", null],
             ["eslint-config-prettier", "virtual:6896a91b67749dbbf418a543156c4eac6f4cbc1fa027e86ac49b3756914fdc2827d616a36a5b832cec0535d82dd54a0d1a5d3cf6f127d29144f1819c3396108b#npm:8.2.0"],
-            ["prettier", null],
+            ["prettier", "npm:2.2.1"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
           "packagePeers": [
@@ -1730,7 +1732,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", null],
             ["eslint", "npm:7.24.0"],
             ["eslint-config-prettier", "virtual:bf0b00470a5c727f323380b74674a18062d8b2bf5f5b89e35116900600867064044c77de56c9a23ace1a6f62db9af8035a648bbdf207ff8d2a46c846509ed6c3#npm:8.2.0"],
-            ["prettier", null],
+            ["prettier", "npm:2.2.1"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
           "packagePeers": [
