@@ -2,5 +2,13 @@
   "name": "@kitdm/server",
   "version": "1.0.0",
   "description": "Maybe a Gamedev.js Jam 2021 Server",
-  "private": true
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@kitdm/shared": "1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@kitdm"
+  }
 }
