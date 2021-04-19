@@ -4,7 +4,13 @@
   "description": "Maybe a Gamedev.js Jam 2021 Server",
   "private": true,
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "dev:watch": "snowpack build --watch",
+    "dev:serve": "nodemon dist/index.js",
+    "dev": "concurrently \"npm:dev:*\"",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@kitdm/shared": "1.0.0"
   },

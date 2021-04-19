@@ -4,7 +4,16 @@
   "description": "Maybe a Gamedev.js Jam 2021 Shared Package",
   "private": true,
   "type": "module",
-  "scripts": {},
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "tsc --build --watch --preserveWatchOutput",
+    "build": "tsc --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "evt": "1.9.12"
   },
