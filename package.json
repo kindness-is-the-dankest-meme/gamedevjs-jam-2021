@@ -8,7 +8,9 @@
   "private": true,
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "dev": "lerna run dev --stream",
+    "dev:all": "lerna run dev --stream",
+    "dev:serve": "nodemon apps/server/dist/index.js",
+    "dev": "concurrently \"npm:dev:*\"",
     "build": "lerna run build",
     "prettier": "prettier . --write",
     "lint": "eslint . --fix --max-warnings 0"

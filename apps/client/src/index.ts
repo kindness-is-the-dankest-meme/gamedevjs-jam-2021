@@ -1,3 +1,3 @@
 import { negotiate } from '@kitdm/shared';
 
-negotiate();
+negotiate('hello client');

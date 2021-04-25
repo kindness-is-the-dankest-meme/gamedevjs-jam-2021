@@ -1,5 +1,10 @@
 import { Evt } from 'evt';
 
-export const negotiate = (): void => {
-  console.log(Evt);
+const logger = Evt.create<string>();
+logger.attach((message) => {
+  console.log(message);
+});
+
+export const negotiate = (message: string): void => {
+  logger.post(message);
 };
