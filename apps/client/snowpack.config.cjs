@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 /**
  * n.b. The added "@type" comment will enable TypeScript type information via
  * VSCode, etc.
@@ -7,6 +9,7 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
+  workspaceRoot: resolve('../..'),
   mount: {
     src: '/',
     public: '/',

@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "dev:all": "lerna run dev --stream",
+    "dev:all": "lerna run dev --stream --parallel",
     "dev:serve": "nodemon apps/server/dist/index.js",
     "dev": "concurrently \"npm:dev:*\"",
     "build": "lerna run build",
