@@ -1,3 +1,8 @@
-import { negotiate } from '@kitdm/shared';
+import { on } from './lib/events';
+import { createWebSocket } from './lib/webSocket';
 
-negotiate('hello client');
+const webSocket = createWebSocket('http://localhost:8080');
+
+on(webSocket, 'open', () => {
+  console.log('open');
+});

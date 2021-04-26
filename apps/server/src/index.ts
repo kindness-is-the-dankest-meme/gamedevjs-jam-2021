@@ -1,3 +1,13 @@
-import { negotiate } from '@kitdm/shared';
+import { Evt } from 'evt';
+import { createServer } from 'http';
+import WebSocket from 'ws';
+import { createSocketServer } from './lib/socketServer';
 
-negotiate('hello server');
+const server = createServer();
+const socketServer = createSocketServer({ server });
+
+Evt.from<WebSocket>(socketServer, 'connection').attach((socket) => {
+  console.log(socket);
+});
+
+server.listen(8080);

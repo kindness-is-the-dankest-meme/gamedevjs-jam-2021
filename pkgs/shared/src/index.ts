@@ -1,6 +1,7 @@
 import evt from 'evt';
 
 const { Evt } = evt;
+
 const logger = Evt.create<string>();
 logger.attach((message) => {
   console.log(message);

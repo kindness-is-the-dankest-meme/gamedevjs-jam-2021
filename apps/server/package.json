@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@kitdm/shared": "1.0.0"
+    "@kitdm/shared": "1.0.0",
+    "evt": "1.9.13",
+    "ws": "7.4.5"
   },
   "eslintConfig": {
     "extends": "@kitdm"
