@@ -15,7 +15,9 @@ module.exports = {
     src: '/',
   },
   plugins: ['@snowpack/plugin-typescript'],
-  packageOptions: {},
+  packageOptions: {
+    external: ['http'],
+  },
   buildOptions: {
     out: 'dist',
   },

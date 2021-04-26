@@ -1,6 +1,6 @@
 import { Evt } from 'evt';
 import { createServer } from 'http';
-import WebSocket from 'ws';
+import type WebSocket from 'ws';
 import { createSocketServer } from './lib/socketServer';
 
 const server = createServer();
@@ -10,4 +10,6 @@ Evt.from<WebSocket>(socketServer, 'connection').attach((socket) => {
   console.log(socket);
 });
 
-server.listen(8080);
+server.listen(8080, () => {
+  console.log('listening on 8080');
+});
