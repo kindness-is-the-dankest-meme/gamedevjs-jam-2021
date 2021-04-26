@@ -9,6 +9,7 @@ const { resolve } = require('path');
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
+  root: __dirname,
   workspaceRoot: resolve('../..'),
   mount: {
     src: '/',
