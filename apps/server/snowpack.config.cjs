@@ -16,7 +16,29 @@ module.exports = {
   },
   plugins: ['@snowpack/plugin-typescript'],
   packageOptions: {
-    external: ['http'],
+    external: [
+      /**
+       * node built-ins
+       */
+      'crypto',
+      'events',
+      'fs',
+      'http',
+      'https',
+      'net',
+      'os',
+      'path',
+      'stream',
+      'tls',
+      'url',
+      'zlib',
+      // /**
+      //  * optionals
+      //  * @see https://github.com/websockets/ws#opt-in-for-performance
+      //  */
+      //  'bufferutil',
+      //  'utf-8-validate',
+    ],
   },
   buildOptions: {
     out: 'dist',

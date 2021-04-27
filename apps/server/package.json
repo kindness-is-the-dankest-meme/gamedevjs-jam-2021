@@ -5,13 +5,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "snowpack build --watch",
-    "build": "snowpack build",
+    "dev": "snowpack build --watch --verbose",
+    "build": "snowpack build --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@kitdm/shared": "1.0.0",
+    "bufferutil": "4.0.3",
     "evt": "1.9.13",
+    "utf-8-validate": "5.0.4",
     "ws": "7.4.5"
   },
   "eslintConfig": {
