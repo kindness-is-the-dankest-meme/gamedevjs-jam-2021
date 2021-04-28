@@ -8,10 +8,8 @@
   "private": true,
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "dev:all": "lerna run dev --scope @kitdm/server --stream",
-    "dev:serve": "nodemon apps/server/dist/index.js",
-    "dev": "concurrently \"npm:dev:*\"",
-    "build": "lerna run build",
+    "dev": "lerna run dev --stream --parallel",
+    "build": "lerna run build --stream --parallel",
     "prettier": "prettier . --write",
     "lint": "eslint . --fix --max-warnings 0"
   },
