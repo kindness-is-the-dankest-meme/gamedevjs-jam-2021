@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm:watch\" \"npm:serve\"",
-    "watch": "nodemon --watch src --exec \"npm run build\"",
-    "serve": "nodemon dist/index.js",
+    "watch": "nodemon --watch ./src --ext ts --exec \"npm run build\" --verbose",
+    "serve": "nodemon ./dist/index.js --verbose",
     "build": "snowpack build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
