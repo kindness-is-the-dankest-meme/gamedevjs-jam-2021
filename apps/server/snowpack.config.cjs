@@ -1,5 +1,7 @@
 const { resolve } = require('path');
 
+const { nodeResolve } = require('@rollup/plugin-node-resolve');
+
 /**
  * n.b. The added "@type" comment will enable TypeScript type information via
  * VSCode, etc.
@@ -39,6 +41,9 @@ module.exports = {
       //  'bufferutil',
       //  'utf-8-validate',
     ],
+    rollup: {
+      plugins: [nodeResolve()],
+    },
   },
   buildOptions: {
     out: 'dist',

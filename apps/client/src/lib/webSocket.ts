@@ -30,7 +30,7 @@ export const isClosing = (webSocket: WebSocket): boolean =>
 export const isClosed = (webSocket: WebSocket): boolean =>
   webSocket.readyState === WebSocket.CLOSED;
 
-export const ready = async (webSocket: WebSocket): Promise<true> =>
+export const isReady = async (webSocket: WebSocket): Promise<true> =>
   isOpen(webSocket) ||
   new Promise((resolve) => {
     once(webSocket, 'open', () => resolve(true));
