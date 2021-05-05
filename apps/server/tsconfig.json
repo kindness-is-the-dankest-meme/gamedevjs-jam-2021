@@ -3,6 +3,13 @@
   "compilerOptions": {
     "lib": [
       "ESNext"
-    ]
+    ],
+    "paths": {
+      "@kitdm/shared/*": [
+        "../../pkgs/shared/*"
+      ]
+    },
+    "outDir": "dist",
+    "rootDir": "src"
   }
 }

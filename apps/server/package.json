@@ -5,17 +5,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm:watch\" \"npm:serve\"",
-    "watch": "nodemon --watch ./src --ext ts --exec \"npm run build\" --verbose",
-    "serve": "nodemon ./dist/index.js --verbose",
-    "build": "snowpack build --verbose",
+    "dev": "tsc --build --watch --preserveWatchOutput",
+    "build": "tsc --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@kitdm/shared": "1.0.0",
-    "bufferutil": "4.0.3",
     "evt": "1.9.13",
-    "utf-8-validate": "5.0.4",
     "wrtc": "0.4.7",
     "ws": "7.4.5"
   },
