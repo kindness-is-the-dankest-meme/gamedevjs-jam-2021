@@ -8,7 +8,7 @@
     "dev": "concurrently \"npm:watch\" \"npm:serve\"",
     "watch": "nodemon --watch ./src --ext ts --exec \"npm run build\" --verbose",
     "serve": "nodemon ./dist/index.js --verbose",
-    "build": "snowpack build",
+    "build": "snowpack build --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

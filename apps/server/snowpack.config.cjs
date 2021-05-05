@@ -1,6 +1,7 @@
 const { resolve } = require('path');
 
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
 
 /**
  * n.b. The added "@type" comment will enable TypeScript type information via
@@ -33,6 +34,7 @@ module.exports = {
       'stream',
       'tls',
       'url',
+      'util',
       'zlib',
       // /**
       //  * optionals
@@ -41,8 +43,17 @@ module.exports = {
       //  'bufferutil',
       //  'utf-8-validate',
     ],
+    knownEntrypoints: ['**/*.node'],
     rollup: {
-      plugins: [nodeResolve()],
+      plugins: [
+        nodeResolve({
+          browser: false,
+          extensions: ['.mjs', '.cjs', '.js', '.json', '.node'],
+        }),
+        commonjs({
+          ignoreTryCatch: true,
+        }),
+      ],
     },
   },
   buildOptions: {
